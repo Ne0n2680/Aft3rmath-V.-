@@ -25,6 +25,7 @@ local telekinesisButton = Instance.new("TextButton")
 local BlackHoleButton = Instance.new("TextButton")
 local AdminButton = Instance.new("TextButton")
 local PartButton = Instance.new("TextButton")
+local UnanchorButton = Instance.new("TextButton")
 local BangButton = Instance.new("TextButton")
 local ResetButton = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
@@ -184,7 +185,7 @@ ClickTpButton.TextSize = 30.000
 TextLabel.Parent = LocalScriptPage
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.402730376, 0, 0.699999988, 0)
+TextLabel.Position = UDim2.new(0.156996593, 0, 0.855555534, 0)
 TextLabel.Size = UDim2.new(0, 200, 0, 50)
 TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "Coming soon..."
@@ -234,12 +235,22 @@ AdminButton.TextSize = 30.000
 PartButton.Name = "PartButton"
 PartButton.Parent = LocalScriptPage
 PartButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
-PartButton.Position = UDim2.new(0.0455081165, 0, 0.702184498, 0)
-PartButton.Size = UDim2.new(0, 124, 0, 50)
+PartButton.Position = UDim2.new(0.0455081649, 0, 0.702184498, 0)
+PartButton.Size = UDim2.new(0, 127, 0, 50)
 PartButton.Font = Enum.Font.SourceSans
 PartButton.Text = "H to P"
 PartButton.TextColor3 = Color3.fromRGB(255, 0, 0)
 PartButton.TextSize = 30.000
+
+UnanchorButton.Name = "UnanchorButton"
+UnanchorButton.Parent = LocalScriptPage
+UnanchorButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+UnanchorButton.Position = UDim2.new(0.53356272, 0, 0.702184498, 0)
+UnanchorButton.Size = UDim2.new(0, 124, 0, 50)
+UnanchorButton.Font = Enum.Font.SourceSans
+UnanchorButton.Text = "Unanchor"
+UnanchorButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+UnanchorButton.TextSize = 30.000
 
 BangButton.Name = "BangButton"
 BangButton.Parent = Aft3rmath
@@ -360,7 +371,7 @@ PlrName.TextWrapped = true
 
 -- Scripts:
 
-local function DGPM_fake_script() -- KillButton.LocalScript 
+local function VXSF_fake_script() -- KillButton.LocalScript 
 	local script = Instance.new('LocalScript', KillButton)
 
 	local lplayer = game:GetService('Players').LocalPlayer
@@ -405,13 +416,13 @@ local function DGPM_fake_script() -- KillButton.LocalScript
 		lplayer.Character.Humanoid.PlatformStand = true
 		kill = true
 		local coin = Instance.new('BodyThrust',lplayer.Character.HumanoidRootPart)
-		coin.Force = Vector3.new(180000000000,180000000000,180000000000)
+		coin.Force = Vector3.new(18000,18000,18000)
 		coin.Name = "yeetforce"
 		repeat lplayer.Character.HumanoidRootPart.CFrame = target.Head.CFrame;coin.Location = target.Head.Position game:GetService('RunService').Heartbeat:wait() until not target.Head or kill == false
 	end)
 end
-coroutine.wrap(DGPM_fake_script)()
-local function CSNJ_fake_script() -- FlingButton.LocalScript 
+coroutine.wrap(VXSF_fake_script)()
+local function UEOPKA_fake_script() -- FlingButton.LocalScript 
 	local script = Instance.new('LocalScript', FlingButton)
 
 	local lplayer = game:GetService('Players').LocalPlayer
@@ -461,8 +472,8 @@ local function CSNJ_fake_script() -- FlingButton.LocalScript
 		repeat lplayer.Character.HumanoidRootPart.CFrame = target.Head.CFrame;coin.Location = target.Head.Position game:GetService('RunService').Heartbeat:wait() until not target.Head or kill == false
 	end)
 end
-coroutine.wrap(CSNJ_fake_script)()
-local function DGEGL_fake_script() -- GotoButton.LocalScript 
+coroutine.wrap(UEOPKA_fake_script)()
+local function ANMFP_fake_script() -- GotoButton.LocalScript 
 	local script = Instance.new('LocalScript', GotoButton)
 
 	local lplayer = game:GetService('Players').LocalPlayer
@@ -505,8 +516,8 @@ local function DGEGL_fake_script() -- GotoButton.LocalScript
 	    lplayer.Character.HumanoidRootPart.CFrame = target.Head.CFrame;coin.Location = target.Head.Position
 	end)
 end
-coroutine.wrap(DGEGL_fake_script)()
-local function TPWMADZ_fake_script() -- AnnoyButton.LocalScript 
+coroutine.wrap(ANMFP_fake_script)()
+local function PVXMUSY_fake_script() -- AnnoyButton.LocalScript 
 	local script = Instance.new('LocalScript', AnnoyButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -552,8 +563,8 @@ local function TPWMADZ_fake_script() -- AnnoyButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(TPWMADZ_fake_script)()
-local function VURDSY_fake_script() -- AnnoyButton.LocalScript 
+coroutine.wrap(PVXMUSY_fake_script)()
+local function FCRGYY_fake_script() -- AnnoyButton.LocalScript 
 	local script = Instance.new('LocalScript', AnnoyButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -608,8 +619,8 @@ local function VURDSY_fake_script() -- AnnoyButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(VURDSY_fake_script)()
-local function VYBHOIK_fake_script() -- CarpetButton.LocalScript 
+coroutine.wrap(FCRGYY_fake_script)()
+local function LTMMP_fake_script() -- CarpetButton.LocalScript 
 	local script = Instance.new('LocalScript', CarpetButton)
 
 	local lplayer = game:GetService('Players').LocalPlayer
@@ -656,8 +667,8 @@ local function VYBHOIK_fake_script() -- CarpetButton.LocalScript
 	    lplayer.Character.HumanoidRootPart.CFrame = target.Head.CFrame;coin.Location = target.Head.Position
 	end)
 end
-coroutine.wrap(VYBHOIK_fake_script)()
-local function AENQ_fake_script() -- ShoulderButton.LocalScript 
+coroutine.wrap(LTMMP_fake_script)()
+local function ZAKAK_fake_script() -- ShoulderButton.LocalScript 
 	local script = Instance.new('LocalScript', ShoulderButton)
 
 	local lplayer = game:GetService('Players').LocalPlayer
@@ -705,8 +716,8 @@ local function AENQ_fake_script() -- ShoulderButton.LocalScript
 		repeat lplayer.Character.HumanoidRootPart.CFrame = target.Head.CFrame;coin.Location = target.Head.Position game:GetService('RunService').Heartbeat:wait() until not target.Head or kill == false
 	end)
 end
-coroutine.wrap(AENQ_fake_script)()
-local function QTNRRGG_fake_script() -- OpenCloseLocal1.LocalScript 
+coroutine.wrap(ZAKAK_fake_script)()
+local function KKIIJF_fake_script() -- OpenCloseLocal1.LocalScript 
 	local script = Instance.new('LocalScript', OpenCloseLocal1)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -715,8 +726,8 @@ local function QTNRRGG_fake_script() -- OpenCloseLocal1.LocalScript
 		script.Parent.Parent.OpenCloseLocal1.Visible = false
 	end)
 end
-coroutine.wrap(QTNRRGG_fake_script)()
-local function JQUQXOK_fake_script() -- OpenCloseLocal2.LocalScript 
+coroutine.wrap(KKIIJF_fake_script)()
+local function CGXCWJK_fake_script() -- OpenCloseLocal2.LocalScript 
 	local script = Instance.new('LocalScript', OpenCloseLocal2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -725,8 +736,8 @@ local function JQUQXOK_fake_script() -- OpenCloseLocal2.LocalScript
 		script.Parent.Parent.OpenCloseLocal1.Visible = true
 	end)
 end
-coroutine.wrap(JQUQXOK_fake_script)()
-local function QOEUID_fake_script() -- FlyButton.FlyLocal 
+coroutine.wrap(CGXCWJK_fake_script)()
+local function YTMUZKD_fake_script() -- FlyButton.FlyLocal 
 	local script = Instance.new('LocalScript', FlyButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -734,8 +745,8 @@ local function QOEUID_fake_script() -- FlyButton.FlyLocal
 	
 	end)
 end
-coroutine.wrap(QOEUID_fake_script)()
-local function GARSWSX_fake_script() -- ClickTpButton.FlyLocal 
+coroutine.wrap(YTMUZKD_fake_script)()
+local function JDPOJ_fake_script() -- ClickTpButton.FlyLocal 
 	local script = Instance.new('LocalScript', ClickTpButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -751,24 +762,24 @@ local function GARSWSX_fake_script() -- ClickTpButton.FlyLocal
 		tool.Parent = game.Players.LocalPlayer.Backpack
 	end)
 end
-coroutine.wrap(GARSWSX_fake_script)()
-local function CJPSUQB_fake_script() -- CbypassButton.FlyLocal 
+coroutine.wrap(JDPOJ_fake_script)()
+local function QWBCP_fake_script() -- CbypassButton.FlyLocal 
 	local script = Instance.new('LocalScript', CbypassButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
 	end)
 end
-coroutine.wrap(CJPSUQB_fake_script)()
-local function EWWWNCI_fake_script() -- telekinesisButton.FlyLocal 
+coroutine.wrap(QWBCP_fake_script)()
+local function VUFVC_fake_script() -- telekinesisButton.FlyLocal 
 	local script = Instance.new('LocalScript', telekinesisButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://pastebin.com/raw/aX9aJbt1'))()
 	end)
 end
-coroutine.wrap(EWWWNCI_fake_script)()
-local function HVNA_fake_script() -- BlackHoleButton.FlyLocal 
+coroutine.wrap(VUFVC_fake_script)()
+local function TJKLGB_fake_script() -- BlackHoleButton.FlyLocal 
 	local script = Instance.new('LocalScript', BlackHoleButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -843,16 +854,16 @@ local function HVNA_fake_script() -- BlackHoleButton.FlyLocal
 		end)
 	end)
 end
-coroutine.wrap(HVNA_fake_script)()
-local function QJHEPK_fake_script() -- AdminButton.FlyLocal 
+coroutine.wrap(TJKLGB_fake_script)()
+local function HIJGJ_fake_script() -- AdminButton.FlyLocal 
 	local script = Instance.new('LocalScript', AdminButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(QJHEPK_fake_script)()
-local function PDSPY_fake_script() -- PartButton.FlyLocal 
+coroutine.wrap(HIJGJ_fake_script)()
+local function WPJZKH_fake_script() -- PartButton.FlyLocal 
 	local script = Instance.new('LocalScript', PartButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -867,8 +878,16 @@ local function PDSPY_fake_script() -- PartButton.FlyLocal
 		end
 	end)
 end
-coroutine.wrap(PDSPY_fake_script)()
-local function XPEPFLL_fake_script() -- BangButton.LocalScript 
+coroutine.wrap(WPJZKH_fake_script)()
+local function DMZSXC_fake_script() -- UnanchorButton.FlyLocal 
+	local script = Instance.new('LocalScript', UnanchorButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/GB9w55bJ'))()
+	end)
+end
+coroutine.wrap(DMZSXC_fake_script)()
+local function MAKQ_fake_script() -- BangButton.LocalScript 
 	local script = Instance.new('LocalScript', BangButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1004,14 +1023,14 @@ local function XPEPFLL_fake_script() -- BangButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(XPEPFLL_fake_script)()
-local function QMNADV_fake_script() -- Aft3rmath.LocalScript 
+coroutine.wrap(MAKQ_fake_script)()
+local function OTWDO_fake_script() -- Aft3rmath.LocalScript 
 	local script = Instance.new('LocalScript', Aft3rmath)
 
 	
 end
-coroutine.wrap(QMNADV_fake_script)()
-local function MAQBWUY_fake_script() -- Aft3rmath.LocalScript 
+coroutine.wrap(OTWDO_fake_script)()
+local function BWJYKJ_fake_script() -- Aft3rmath.LocalScript 
 	local script = Instance.new('LocalScript', Aft3rmath)
 
 	local UIS = game:GetService('UserInputService')
@@ -1049,8 +1068,8 @@ local function MAQBWUY_fake_script() -- Aft3rmath.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MAQBWUY_fake_script)()
-local function JVEYWEK_fake_script() -- ResetButton.LocalScript 
+coroutine.wrap(BWJYKJ_fake_script)()
+local function FIGDFB_fake_script() -- ResetButton.LocalScript 
 	local script = Instance.new('LocalScript', ResetButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1059,8 +1078,8 @@ local function JVEYWEK_fake_script() -- ResetButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(JVEYWEK_fake_script)()
-local function MGYP_fake_script() -- Aft3rmath.LocalScript 
+coroutine.wrap(FIGDFB_fake_script)()
+local function MMDB_fake_script() -- Aft3rmath.LocalScript 
 	local script = Instance.new('LocalScript', Aft3rmath)
 
 	--Thanks for using this script
@@ -1111,4 +1130,4 @@ local function MGYP_fake_script() -- Aft3rmath.LocalScript
 		title.Text = players[num].Name
 	end)
 end
-coroutine.wrap(MGYP_fake_script)()
+coroutine.wrap(MMDB_fake_script)()
