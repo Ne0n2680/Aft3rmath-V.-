@@ -405,7 +405,7 @@ local function DGPM_fake_script() -- KillButton.LocalScript
 		lplayer.Character.Humanoid.PlatformStand = true
 		kill = true
 		local coin = Instance.new('BodyThrust',lplayer.Character.HumanoidRootPart)
-		coin.Force = Vector3.new(18000,18000,18000)
+		coin.Force = Vector3.new(180000000000,180000000000,180000000000)
 		coin.Name = "yeetforce"
 		repeat lplayer.Character.HumanoidRootPart.CFrame = target.Head.CFrame;coin.Location = target.Head.Position game:GetService('RunService').Heartbeat:wait() until not target.Head or kill == false
 	end)
